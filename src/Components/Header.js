@@ -20,7 +20,7 @@ const Header = () => {
     },
   ]
   return (
-    <div class=" pt-20">
+    <div class="pt-20">
       <div className='components'>
             <div className='box bg-sky-400' >
 
@@ -31,8 +31,8 @@ const Header = () => {
                 </div> 
                 <div class="grid xs:grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8 content-start p-8">
                   {data.map(({id,text})=>(
-                    <div key={id} class=" inline-block bg-white rounded-xl max-w-full p-5 h-56">
-                      <p className='text font-serif content-center text-center text-xl'>{text}</p>
+                    <div key={id} class="bg-white rounded-xl max-w-full p-5 h-56 flex justify-center items-center align-middle">
+                      <p className='text font-serif content-center text-center text-xl '>{text}</p>
                     </div>
                   ))}
                 </div>
