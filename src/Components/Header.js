@@ -29,7 +29,7 @@ const Header = () => {
                   <h1 className='text font-serif text-7xl text-center text text-white pt-10'>Data Science Program </h1>
                 </ul>
                 </div> 
-                <div class="grid xs:grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-8 content-start p-8">
+                <div class="grid sm:grid-cols-2  lg:grid-cols-4 gap-8 content-start p-8">
                   {data.map(({id,text})=>(
                     <div key={id} class="bg-white rounded-xl max-w-full p-5 h-56 flex justify-center items-center align-middle">
                       <p className='text font-serif content-center text-center text-xl '>{text}</p>
