@@ -25,7 +25,7 @@ export class Content extends Component {
                 </a>
               </div>
               <div className=' inline-block'>
-                <a href='/Brochure/Data_Science_Syllabus.pdf' download target='_blank' className='group mx-4 text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLScM5OvAY84ik1kt3GXaCRQH6Bg0zOrMsmVKoOizCQcIrovLgA/viewform' target='_blank' className='group mx-4 text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
                     Register Here
                 </a>
               </div>
