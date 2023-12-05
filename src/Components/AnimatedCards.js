@@ -74,24 +74,24 @@ const AnimatedCards = () => {
     <div className='grid grid-cols-3'>
         {data.map(({id,title,points})=>(
             <div className="flex min-h-screen flex-col justify-center bg-slate-100">
-            <div className="group h-96 w-96 [prespective:1000px]">
-                <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <div className="absolute insert-0 h-full w-full [backface-visibility:hidden]">
-                        <div className="flex min-h-full flex-col items-center justify-center">
-                            <h1 className='text-3xl'>{title}</h1>
-                        </div>
+              <div className="group h-96 w-96 [prespective:1000px]">
+                  <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                      <div className="absolute insert-0 h-full w-full [backface-visibility:hidden]">
+                          <div className="flex min-h-full flex-col items-center justify-center">
+                              <h1 className='text-3xl'>{title}</h1>
+                          </div>
+                      </div>
+                      <div className="absolute insert-0 h-auto w-full rounded-xl bg-sky-400 px-12 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                          <div className="flex min-h-full flex-col items-center justify-center">
+                          <ul className='list-disc text-xl'>
+                              {points.map((point, index) => (
+                              <li key={index} className=' py-2'>{point}</li>
+                              ))}
+                          </ul>
+                      </div>
                     </div>
-                    <div className="absolute insert-0 h-auto w-full rounded-xl bg-sky-400 px-12 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                        <div className="flex min-h-full flex-col items-center justify-center">
-                        <ul className='list-disc text-xl'>
-                            {points.map((point, index) => (
-                            <li key={index} className=' py-2'>{point}</li>
-                            ))}
-                        </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                  </div>
+              </div>
             </div>
         ))}
     </div>
