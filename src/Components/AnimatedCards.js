@@ -45,7 +45,7 @@ const AnimatedCards = () => {
             ]
           },
           {
-            title: 'Analytics Areas/Project Cases',
+            title: 'Analytics Project Cases',
             points: [
               'Customer Experience',
               'Sales Analytics',
@@ -63,7 +63,7 @@ const AnimatedCards = () => {
           {
             title: 'Admission Process',
             points: [
-              'The Certification Program in Data Science is ideal for students and professionals who are interested in working in the analytics industry and are keen on enhancing their technical skills with exposure to cutting-edge practices.',
+              'The Data Science Certification caters to individuals, offering a chance to boost analytics skills for both students and professionals entering the industry.',
               'Eligibility: Any Graduate and Professional',
               'Enrollment Form link: https://forms.gle/bQwTSTaMMkUjCW2e6',
               'Select Data Science Certification Program'
@@ -71,19 +71,18 @@ const AnimatedCards = () => {
           }
     ]
   return (
-    <div className='grid grid-cols-3'>
+    <div className=' my-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center font-serif'>
         {data.map(({id,title,points})=>(
-            <div className="flex min-h-screen flex-col justify-center bg-slate-100">
-              <div className="group h-96 w-96 [prespective:1000px]">
-                  <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+              <div className="group m-4 h-96 w-96 [prespective:1000px]">
+                  <div className="border-2 relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
                       <div className="absolute insert-0 h-full w-full [backface-visibility:hidden]">
                           <div className="flex min-h-full flex-col items-center justify-center">
-                              <h1 className='text-3xl'>{title}</h1>
+                              <h1 className='text-3xl font-medium'>{title}</h1>
                           </div>
                       </div>
-                      <div className="absolute insert-0 h-auto w-full rounded-xl bg-sky-400 px-12 [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                      <div className="absolute insert-0 h-full w-full rounded-xl bg-sky-400 px-12 [transform:rotateY(180deg)] [backface-visibility:hidden] overflow-y-auto">
                           <div className="flex min-h-full flex-col items-center justify-center">
-                          <ul className='list-disc text-xl'>
+                          <ul className='list-disc text-lg'>
                               {points.map((point, index) => (
                               <li key={index} className=' py-2'>{point}</li>
                               ))}
@@ -92,7 +91,6 @@ const AnimatedCards = () => {
                     </div>
                   </div>
               </div>
-            </div>
         ))}
     </div>
     )
